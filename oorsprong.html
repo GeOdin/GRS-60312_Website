@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!-- header and footer should be whole td, so no part abonve that's not part of #header pr #footer -->
+<!-- make sure that table is whole page -->
+<!-- make website available in (most important) Dutch and English -->
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<title>
+                	Renkum: Value The Historical Landscape
+		</title>
+		<script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript">
+		</script>
+	</head>
+	<body topmargin="0" rightmargin="0" bottommargin="0" leftmargin="0" marginheight="0" marginwidth="0" link="white" alink="white" vlink="white">
+		<table cellspacing="0" cellpadding="2" border="0" style="width: 100%; height=100%; background-color: #202020" align="center">
+			<tbody>
+				<tr>
+					<td colspan=3 align="center">
+						<div id="header">
+							<p>
+							<h2>
+								Oorsprong
+							</h2>
+							</p>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td align="left" width="220" height="450">
+						<a href="index.html" style="text-decoration:none;">
+							<div id="buttonTags"> 
+								<p>
+									Main Page
+								</p>
+							</div> <br/> <br/>
+						</a>
+						<a href="oosterbeek.html" style="text-decoration:none;">
+							<div id="buttonTags"> 
+								<p>
+									Oosterbeek
+								</p>
+							</div> <br/> <br/>
+						</a>
+						<a href="hartenstein.html" style="text-decoration:none;">
+							<div id="buttonTags2"> 
+								<p>
+									Hartenstein
+								</p>
+							</div> <br/> <br/>
+						</a>
+						<a href="hemelseberg.html" style="text-decoration:none;">
+							<div id="buttonTags2"> 
+								<p>
+									Hemelse Berg
+								</p>
+							</div> <br/> <br/>
+						</a>
+						<a href="oorsprong.html" style="text-decoration:none;">
+							<div id="buttonTags2"> 
+								<p>
+									Oorsprong
+								</p>
+							</div> <br/> <br/>
+						</a>
+						<a href="pietersberg.html" style="text-decoration:none;">
+							<div id="buttonTags2"> 
+								<p>
+									Pietersberg
+								</p>
+							</div> <br/> <br/>
+						</a>
+						<a href="maps.html" style="text-decoration:none;">
+							<div id="buttonTags"> 
+								<p>
+									Maps Overlay
+								</p>
+							</div> <br/> <br/>
+						</a>
+						<a href="maps2.html" style="text-decoration:none;">
+							<div id="buttonTags"> 
+								<p>
+									Maps 2 - Google API
+								</p>
+							</div> <br/> <br/>
+						</a>
+					</td>
+					<td bgcolor="acd1b2" valign="top" style="border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;">
+						<div id="bodyFrame">
+							<img src = "images/oorsprong.jpg" style="width: 97%; height: 40vh;"/> <br/> <br/>
+
+							Story about De Oorsprong. <br/> <br/>
+
+							<div id="map" style="width: 97%; height: 40vh;">
+							</div> <br/>
+
+							<script>
+								var locations = [
+									['Klingelbeekse molen', 52.092847,  6.046616, "A"]
+								];
+
+								var map = new google.maps.Map(document.getElementById('map'), {
+									zoom: 17,
+									center: new google.maps.LatLng(51.980806,5.824135),
+									mapTypeId: google.maps.MapTypeId.HYBRID
+								});
+
+								var infowindow = new google.maps.InfoWindow();
+
+								var marker, i;
+
+								for (i = 0; i < locations.length; i++) {  
+									marker = new google.maps.Marker({
+										position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+										map: map,
+										title: locations[i][0],
+										icon: 'misschienNodig/blue_Marker' + locations[i][3] + '.png' <!-- this line can be deleted, with locations[i][6], then red markers pop up with black dots, the regular markers -->
+									});
+
+									google.maps.event.addListener(marker, 'click', (function(marker, i) {
+										return function() {
+											infowindow.setContent('<font size=2.5em>' + locations[i][0] + '</font>');
+											infowindow.open(map, marker);
+										}
+									})(marker, i));
+								}
+							</script>
+						</div>
+					</td>
+					<td width="1%">
+					</td>
+				</tr>
+				<tr>
+					<td colspan=3 align="center">
+						<div id="footer">
+							<p>
+								<div id="button">
+									<p>
+										Footer
+									</p>
+								</div>
+							</p>
+						</div>
+					</td>
+				<tr>
+			</tbody>
+		</table>
+	</body>
+</html>

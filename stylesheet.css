@@ -1,0 +1,181 @@
+body {
+	background-color: #202020;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+	margin-right: 0;
+	margin-height: 0;
+	margin-width: 0;
+/*	overflow: hidden; --- hides scrollbar vertical and horizontal*/
+
+}
+
+h2 {
+	font-family: Verdana;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 15px;
+	color: white;
+}
+
+h3 {
+	font-family: Verdana;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 15px;
+	color: white;
+}
+
+#header {
+	position: top;
+	bottom: 105px;
+	top: 5px;
+	background-color: #404040;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	height: 95px;
+}
+
+p {
+	font-family: Tahoma;
+	font-size: 1em;
+}
+
+table {
+	border: #202020 2px solid;
+	background-color: #202020; /*was #acd1b2;*/
+	height: 97vh;
+	width: 100%;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border-spacing: 0px;
+	padding: 2px;
+	text-align: left;
+}
+
+#bodyFrame{
+	float: center;
+	position: relative;
+	left: 10px;
+	color: black;
+	font-family: verdana;
+}
+
+#bodyFrame h2{
+	text-align: left;
+	font-family: Verdana;
+	font-weight: bold;
+	color: white;
+	font-size: 2em;
+}
+
+#bodyFrame h3{
+	text-align: left;
+	font-family: Verdana;
+	padding-left: 5px;
+	color: #202020;
+	font-size: 1em;
+}
+
+#overlay {
+	width:97%;
+	height:300px;
+}
+
+#buttonTags{
+	border: 2px solid #000000;
+	float:left;
+	position: relative;
+	left: 10px;
+	bottom: 0px;
+	border-radius: 7px;
+	background-color: gray;
+	height: 30px;
+	width: 190px;
+}
+
+#buttonTags p{
+	float: left;
+	position: relative;
+	left: 10px;
+	bottom: 10px;
+	font-size: 1em;
+	color: white;
+	text-align: center;
+}
+
+#buttonTags2{
+	border: 2px solid #000000;
+	float:left;
+	position: relative;
+	left: 10px;
+	bottom: 0px;
+	border-radius: 7px;
+	background-color: gray;
+	height: 30px;
+	width: 190px;
+}
+
+#buttonTags2 p{
+	float: left;
+	position: relative;
+	left: 20px;
+	bottom: 10px;
+	font-size: 1em;
+	color: white;
+	text-align: center;
+}
+
+#buttonYears{
+	border: 2px solid #33CCFF;
+	float:left;
+	position: relative;
+	left: 0px;
+	bottom: 0px;
+	border-radius: 7px;
+	background-color: #3399FF;
+	height: 30px;
+	width: 60px;
+	
+}
+
+#buttonYears p{
+	float: center;
+	position: relative;
+	bottom: 10px;
+	font-size: 1em;
+	color: white;
+	text-align: center;
+}
+
+#footer{
+	clear: both;
+	margin: auto;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	height: 95px;
+	background-color: #404040;
+}
+
+#button{
+	border: 2px solid #6495ED;
+	float: center;
+	position: relative; 
+	bottom: -30px;
+	border-radius: 5px;
+	background-color: #BCD2EE;
+	height: 30px;
+	width: 100px;
+	
+}
+
+#button p{
+	position: relative;
+	bottom: 17px;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-align: center;
+}
